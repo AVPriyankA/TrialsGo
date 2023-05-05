@@ -11,6 +11,9 @@ from logging.handlers import RotatingFileHandler
 # Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "your-token-here")
 
+# Dest Bot token @Botfather
+DEST_BOT_TOKEN = os.environ.get("DEST_BOT_TOKEN", "your-token-here")
+
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "your-api-id-here"))
 
@@ -52,7 +55,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 # Set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>📁ғɪʟᴇ ɴᴀᴍᴇ</b> : <code>{filename}</code> \n<b>\n🎬Jᴏɪɴ ᴜs : [TellyFun](https://t.me/TellyFun_Official)\n</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>🎬Jᴏɪɴ ᴜs :<a href='https://t.me/TellyFun_Official'>[TellyFun]</a></b>")
 
 # Set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
