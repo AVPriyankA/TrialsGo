@@ -5,5 +5,5 @@ store_bot = Bot()
 store_bot.run()
 
 # Create another bot instance for retrieving files
-retrieve_bot = Bot()
-retrieve_bot.run()
+dest_bot = Bot()
+dest_bot.run()
