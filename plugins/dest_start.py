@@ -92,7 +92,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_text(
-            text = "Hey! {}\n\nThis is Just the File Destination Bot So Dot Send File Here \n\n Buy Your Personal Bot @OwnYourBotz".format(
+            text = "Hey! {first}\n\nThis is Just the File Destination Bot So Dot Send File Here \n\n Buy Your Personal Bot @OwnYourBotz".format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
                 username = None if not message.from_user.username else '@' + message.from_user.username,
